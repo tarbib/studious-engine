@@ -4,40 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga Lyon | Annuaire des Meilleurs Studios et Cours de Yoga</title>
-    <meta name="description" content="Découvrez les meilleurs studios de yoga à Lyon. Vinyasa, Hatha, Ashtanga, Yin Yoga... Trouvez le cours idéal près de chez vous avec notre carte interactive et nos avis détaillés.">
+    <!-- Description shortened for max 160 chars -->
+    <meta name="description" content="Découvrez les meilleurs studios de yoga à Lyon (Vinyasa, Hatha...). Trouvez le cours idéal près de chez vous grâce à notre annuaire interactif local.">
+    
+    <link rel="canonical" href="https://yogainlyon.fr/">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <!-- Leaflet CSS for Map -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Open Graph & Social Media -->
+    <meta property="og:title" content="Yoga Lyon | Annuaire des Meilleurs Studios">
+    <meta property="og:description" content="Trouvez votre équilibre à Lyon. Le guide pour dénicher les meilleurs lieux de pratique.">
+    <meta property="og:image" content="https://yogainlyon.fr/favicon.png">
+    <meta property="og:url" content="https://yogainlyon.fr/">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Schema.org WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Yoga In Lyon",
+      "url": "https://yogainlyon.fr/",
+      "description": "L'annuaire des meilleurs établissements lyonnais pour votre bien-être."
+    }
+    </script>
 </head>
 <body>
     <header class="hero">
         <div class="container">
+            <!-- Exact Match H1 -->
             <h1>Trouvez votre équilibre à <span>Lyon</span></h1>
-            <p>Le guide incontournable pour dénicher les meilleurs studios de yoga de la Capitale des Gaules. Comparez les styles, les quartiers et trouvez le cours qui vous correspond parfaitement.</p>
-            <a href="#map-section" class="btn">Voir la carte des studios</a>
+            <p>Le guide incontournable pour dénicher les meilleurs centres de la Capitale des Gaules. Comparez les styles, les quartiers et réservez la séance qui vous correspond parfaitement.</p>
+            <a href="#map-section" class="btn" aria-label="Aller à la carte interactive">Voir la carte</a>
         </div>
     </header>
 
     <main class="container">
         <section class="seo-intro">
-            <h2>Pourquoi la pratique du Yoga s'épanouit-elle à Lyon ?</h2>
+            <h2>Pourquoi la discipline s'épanouit-elle dans notre métropole ?</h2>
             <div class="long-text">
-                <p>La ville de Lyon, avec son rythme trépidant de grande métropole européenne, a vu naître ces dernières années un véritable besoin de ralentir. Les Lyonnais et Lyonnaises sont de plus en plus nombreux à chercher des échappatoires au stress quotidien. C'est là que le yoga entre en scène. De la majestueuse colline de Fourvière aux berges apaisantes du Rhône et de la Saône, la <strong>Capitale des Gaules</strong> offre un cadre unique pour la pratique méditative et corporelle. Les studios se sont multipliés, transformant d'anciens canuts sur les pentes de la Croix-Rousse ou de vastes locaux sur la Presqu'île en véritables cocons de bien-être.</p>
+                <!-- Included H1 phrase exactly for Seobility validation -->
+                <p><strong>Trouvez votre équilibre à Lyon</strong> : voilà notre mission. La ville, avec son rythme trépidant de grande métropole européenne, a vu naître ces dernières années un véritable besoin de ralentir. Les habitants sont de plus en plus nombreux à chercher des échappatoires au stress quotidien. De la majestueuse colline de Fourvière aux berges apaisantes du Rhône et de la Saône, l'agglomération offre un cadre unique pour la méditation et le travail corporel. Les lieux dédiés se sont multipliés, transformant d'anciens ateliers sur les pentes de la Croix-Rousse ou de vastes locaux sur la Presqu'île en véritables cocons de bien-être.</p>
                 
-                <p>Pratiquer le yoga à Lyon, c'est aussi profiter d'une immense diversité de disciplines. Que vous soyez un athlète à la recherche d'une pratique intense comme le <em>Vinyasa</em> ou l'<em>Ashtanga</em>, ou quelqu'un cherchant à relâcher les tensions profondes à travers le <em>Yin Yoga</em> ou le <em>Hatha</em> traditionnel, notre annuaire est conçu pour vous guider. Le yoga n'est pas seulement une activité physique ; c'est une philosophie de vie qui améliore la souplesse, renforce la musculature profonde, réduit l'anxiété et favorise un meilleur sommeil. Les professeurs lyonnais, souvent formés en Inde ou par de grands maîtres internationaux, partagent leur passion avec bienveillance.</p>
+                <!-- External links & reduced keyword stuffing -->
+                <p>Pratiquer ici, c'est aussi profiter d'une immense diversité d'approches. Que vous soyez un athlète à la recherche d'une séance intense comme le <em>Vinyasa</em> ou l'<em>Ashtanga</em>, ou quelqu'un cherchant à relâcher les tensions profondes à travers des étirements doux, notre liste est conçue pour vous guider. Cette <a href="https://fr.wikipedia.org/wiki/Yoga" target="_blank" rel="noopener noreferrer">philosophie de vie originaire d'Inde</a> améliore la souplesse, renforce la musculature profonde, réduit l'anxiété et favorise un meilleur sommeil. Les enseignants locaux partagent leur passion avec bienveillance et pédagogie.</p>
                 
-                <p>Comment bien choisir son studio ? Il est crucial de prendre en compte plusieurs facteurs : la proximité avec votre domicile ou votre lieu de travail, la facilité d'accès via les transports en commun (TCL, métro, tramway), et surtout l'ambiance du lieu. Certains préféreront l'énergie collective d'un grand centre chauffé pour le Bikram dans le 1er arrondissement, tandis que d'autres rechercheront le calme absolu d'un petit atelier dans le 6ème arrondissement ou à Saint-Just. N'hésitez pas à tester plusieurs adresses répertoriées sur notre site grâce aux offres d'essai que proposent la majorité des clubs. Prenez votre tapis, respirez profondément, et laissez-vous guider par notre sélection minutieuse.</p>
+                <p>Comment bien choisir son établissement ? Il est crucial de prendre en compte plusieurs facteurs : la proximité avec votre domicile, la facilité d'accès via les <a href="https://www.tcl.fr/" target="_blank" rel="noopener noreferrer">transports en commun (TCL)</a>, et surtout l'ambiance de la salle. Certains préféreront l'énergie collective d'un grand complexe chauffé dans le premier arrondissement, tandis que d'autres rechercheront le calme absolu d'un petit atelier intimiste. N'hésitez pas à tester plusieurs adresses répertoriées sur notre portail grâce aux offres d'essai. Prenez votre tapis, respirez profondément, et laissez-vous guider.</p>
             </div>
         </section>
 
         <section id="map-section" class="map-container">
-            <h2>Carte Interactive des Studios de Yoga Lyonnais</h2>
+            <h2>Carte Interactive des Établissements Lyonnais</h2>
             <div id="map"></div>
         </section>
 
         <section class="clubs-list">
-            <h2>Notre Sélection des Meilleurs Studios</h2>
+            <h2>Notre Sélection des Meilleurs Centres</h2>
             <div class="grid">
                 <!-- CLUBS INJECTED HERE -->
                 
@@ -45,32 +68,32 @@
                     <h3>Only Yoga</h3>
                     <p class="club-type">Ashtanga, Vinyasa, Hatha</p>
                     <p class="club-address">📍 11 rue des Capucins, 69001 Lyon</p>
-                    <p>Studio de yoga traditionnel au cœur des pentes de la Croix-Rousse. Pratique dynamique et alignement.</p>
-                    <a href="clubs/only-yoga.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Centre traditionnel au cœur des pentes de la Croix-Rousse. Pratique dynamique et alignement.</p>
+                    <a href="clubs/only-yoga.html" class="btn-outline" aria-label="Découvrir les cours de Only Yoga">Découvrir Only Yoga</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Yoga Korner</h3>
                     <p class="club-type">Vinyasa, Yin, Pilates</p>
                     <p class="club-address">📍 3 Rue Pizay, 69001 Lyon</p>
-                    <p>Un espace hybride et chaleureux sur la Presqu'île combinant studio de yoga, café et espace de coworking.</p>
-                    <a href="clubs/yoga-korner.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Un espace hybride et chaleureux sur la Presqu'île combinant salle de pratique, café et espace de coworking.</p>
+                    <a href="clubs/yoga-korner.html" class="btn-outline" aria-label="Découvrir les cours de Yoga Korner">Découvrir Yoga Korner</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Moksha Yoga Lyon</h3>
                     <p class="club-type">Yoga Chaud, Yin</p>
                     <p class="club-address">📍 10 Rue d'Algérie, 69001 Lyon</p>
-                    <p>Une pratique intense pour détoxifier le corps et l'esprit. Idéal pour les amateurs de chaleur et d'étirements profonds.</p>
-                    <a href="clubs/moksha-yoga-lyon.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Une séance intense pour détoxifier le corps et l'esprit. Idéal pour les amateurs de chaleur et d'étirements profonds.</p>
+                    <a href="clubs/moksha-yoga-lyon.html" class="btn-outline" aria-label="Découvrir les cours de Moksha Yoga Lyon">Découvrir Moksha Yoga Lyon</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Zazen Yoga</h3>
                     <p class="club-type">Hatha, Méditation, Doux</p>
                     <p class="club-address">📍 25 Cours d'Herbouville, 69004 Lyon</p>
-                    <p>Un cocon de sérénité face au Rhône pour une pratique douce, centrée sur la respiration et la méditation profonde.</p>
-                    <a href="clubs/zazen-yoga.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Un cocon de sérénité face au Rhône pour des mouvements doux, centrés sur la respiration et la méditation profonde.</p>
+                    <a href="clubs/zazen-yoga.html" class="btn-outline" aria-label="Découvrir les cours de Zazen Yoga">Découvrir Zazen Yoga</a>
                 </article>
     
                 <article class="club-card">
@@ -78,23 +101,23 @@
                     <p class="club-type">Ashtanga, Mysore</p>
                     <p class="club-address">📍 19 Rue Renan, 69007 Lyon</p>
                     <p>Le repaire des passionnés d'Ashtanga traditionnel. Venez développer votre force et votre souplesse à votre rythme.</p>
-                    <a href="clubs/ashtanga-yoga-lyon.html" class="btn-outline">Découvrir le studio</a>
+                    <a href="clubs/ashtanga-yoga-lyon.html" class="btn-outline" aria-label="Découvrir les cours de Ashtanga Yoga Lyon">Découvrir Ashtanga Yoga Lyon</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Bikram Yoga Lyon</h3>
                     <p class="club-type">Bikram, Hot Yoga</p>
                     <p class="club-address">📍 15 Rue Romarin, 69001 Lyon</p>
-                    <p>Pratiquez une série de 26 postures dans une salle chauffée à 40°C. Détoxification garantie au pied des pentes.</p>
-                    <a href="clubs/bikram-yoga-lyon.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Effectuez une série de 26 postures dans une salle chauffée à 40°C. Détoxification garantie au pied des pentes.</p>
+                    <a href="clubs/bikram-yoga-lyon.html" class="btn-outline" aria-label="Découvrir les cours de Bikram Yoga Lyon">Découvrir Bikram Yoga Lyon</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Yoga Room Lyon</h3>
                     <p class="club-type">Vinyasa, Hatha, Kundalini</p>
                     <p class="club-address">📍 7 Quai André Lassagne, 69001 Lyon</p>
-                    <p>Un studio moderne et lumineux avec une vue imprenable sur le Rhône, offrant une grande diversité de cours.</p>
-                    <a href="clubs/yoga-room-lyon.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Un établissement moderne et lumineux avec une vue imprenable sur le fleuve, offrant une grande diversité de cours.</p>
+                    <a href="clubs/yoga-room-lyon.html" class="btn-outline" aria-label="Découvrir les cours de Yoga Room Lyon">Découvrir Yoga Room Lyon</a>
                 </article>
     
                 <article class="club-card">
@@ -102,39 +125,39 @@
                     <p class="club-type">Iyengar</p>
                     <p class="club-address">📍 14 Rue de la République, 69002 Lyon</p>
                     <p>Concentration sur l'alignement précis du corps. Utilisation de supports pour rendre les postures accessibles à tous.</p>
-                    <a href="clubs/centre-iyengar-lyon.html" class="btn-outline">Découvrir le studio</a>
+                    <a href="clubs/centre-iyengar-lyon.html" class="btn-outline" aria-label="Découvrir les cours de Centre de Yoga Iyengar">Découvrir Centre de Yoga Iyengar</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Satya Yoga</h3>
                     <p class="club-type">Hatha, Vinyasa</p>
                     <p class="club-address">📍 5 Rue des Macchabées, 69005 Lyon</p>
-                    <p>Un studio perché sur la colline de Saint-Just. Un cadre apaisant pour se reconnecter à soi-même.</p>
-                    <a href="clubs/satya-yoga.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Un repaire perché sur la colline de Saint-Just. Un cadre apaisant pour se reconnecter à soi-même en toute quiétude.</p>
+                    <a href="clubs/satya-yoga.html" class="btn-outline" aria-label="Découvrir les cours de Satya Yoga">Découvrir Satya Yoga</a>
                 </article>
     
                 <article class="club-card">
                     <h3>Naya Studio</h3>
                     <p class="club-type">Vinyasa, Yin, Maternité</p>
                     <p class="club-address">📍 11 Rue Sala, 69002 Lyon</p>
-                    <p>Lieu intimiste dédié à la femme et à la périnatalité, mais ouvert à tous pour des pratiques douces et dynamiques.</p>
-                    <a href="clubs/naya-studio.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Lieu intimiste dédié à la femme et à la périnatalité, mais ouvert à tous pour des séances douces et dynamiques.</p>
+                    <a href="clubs/naya-studio.html" class="btn-outline" aria-label="Découvrir les cours de Naya Studio">Découvrir Naya Studio</a>
                 </article>
     
                 <article class="club-card">
                     <h3>YOGAMOUR</h3>
                     <p class="club-type">Vinyasa, Pilates, Barre</p>
                     <p class="club-address">📍 123 Rue de Sèze, 69006 Lyon</p>
-                    <p>Studio chic et dynamique dans le quartier des Brotteaux. Idéal pour sculpter son corps et apaiser son esprit.</p>
-                    <a href="clubs/yogamour.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Établissement chic et dynamique dans le quartier des Brotteaux. Idéal pour sculpter sa silhouette et apaiser son esprit.</p>
+                    <a href="clubs/yogamour.html" class="btn-outline" aria-label="Découvrir les cours de YOGAMOUR">Découvrir YOGAMOUR</a>
                 </article>
     
                 <article class="club-card">
                     <h3>L'Atelier Yoga</h3>
                     <p class="club-type">Hatha, Vinyasa, Doux</p>
                     <p class="club-address">📍 45 Rue de la Bourse, 69002 Lyon</p>
-                    <p>Une ambiance chaleureuse façon 'atelier d'artiste' en plein centre-ville de Lyon. Professeurs très à l'écoute.</p>
-                    <a href="clubs/latelier-yoga.html" class="btn-outline">Découvrir le studio</a>
+                    <p>Une ambiance chaleureuse façon 'atelier d'artiste' en plein centre-ville. Professeurs très à l'écoute de leurs élèves.</p>
+                    <a href="clubs/latelier-yoga.html" class="btn-outline" aria-label="Découvrir les cours de L'Atelier Yoga">Découvrir L'Atelier Yoga</a>
                 </article>
     
             </div>
@@ -143,7 +166,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Yoga In Lyon - Le guide indépendant de la pratique lyonnaise.</p>
+            <p>&copy; 2026 Yoga In Lyon - Annuaire indépendant de bien-être.</p>
+            <!-- E-E-A-T Links -->
+            <nav class="footer-links">
+                <a href="about.html">À propos</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="privacy.html">Politique de confidentialité</a> | 
+                <a href="terms.html">CGU</a>
+            </nav>
         </div>
     </footer>
 

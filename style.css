@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #c75b33; /* Terracotta/Brick tone for Lyon */
+    --primary: #c75b33; 
     --primary-light: #e6a583;
     --bg-color: #F9F8F6;
     --text-color: #333333;
@@ -30,6 +30,7 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:
 .seo-intro { margin: 60px 0; }
 .seo-intro h2 { color: var(--primary); margin-bottom: 20px; text-align: center; font-size: 2rem;}
 .long-text p { margin-bottom: 20px; font-size: 1.1rem; color: #444; text-align: justify;}
+.long-text a { color: var(--primary); font-weight: bold; text-decoration: underline; }
 
 .map-container { margin: 60px 0; }
 .map-container h2 { text-align: center; color: var(--primary); margin-bottom: 20px;}
@@ -46,3 +47,6 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:
 .club-card p:not(.club-type):not(.club-address) { flex-grow: 1; }
 
 footer { background: var(--text-color); color: var(--white); text-align: center; padding: 30px 0; margin-top: 60px; }
+.footer-links { margin-top: 15px; font-size: 0.9rem; }
+.footer-links a { color: var(--primary-light); text-decoration: none; margin: 0 10px; }
+.footer-links a:hover { text-decoration: underline; color: var(--white); }
